@@ -36,4 +36,49 @@ body,
     border: #8b966c solid 30px;
     border-radius: 20px;
     box-shadow: inset 0 0 0 5px #8b966c;
+    background-color: #c4cfa3;
 }
+
+#instruction-text {
+    position: absolute;
+    top: 60%;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    color: #abb78a;
+}
+
+#score,
+#topScore {
+    font-size: 26px;
+}
+
+#topScore {
+    color: #d8ddca;
+    display: none;
+}
+
+#logo {
+    position: absolute;
+}
+
+.snake {
+    border: #5a5a5a 1px dotted;
+}
+
+.food {
+    background-color: dedede;
+    border: #999 5px solid;
+}
+
