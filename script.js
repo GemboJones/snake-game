@@ -9,11 +9,13 @@ let gameSpeedDelay = 200;
 let gameStarted = false;
 const instructionText = document.getElementById("instruction-text");
 const logo = document.getElementById("logo");
+const score = document.getElementById('score')
 
 function draw() {
   board.innerHTML = "";
   drawSnake();
   drawFood();
+  updateScore()
 }
 
 function drawSnake() {
@@ -156,4 +158,10 @@ function resetGame () {
    food = generateFood()
    direction = 'right'
    gameSpeedDelay = 200
+   updateScore()
+}
+
+function updateScore () {
+   const currentScore = snake.length - 1
+   score.textContent = currentScore.toString().padStart(3, '0')
 }
