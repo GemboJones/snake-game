@@ -39,12 +39,12 @@ function setPosition(element, position) {
   element.style.gridRow = position.y;
 }
 
-// draw();
-
 function drawFood() {
-  const foodElement = createGameElement("div", "food");
-  setPosition(foodElement, food);
-  board.appendChild(foodElement);
+   if (gameStarted) {
+      const foodElement = createGameElement("div", "food");
+      setPosition(foodElement, food);
+      board.appendChild(foodElement);
+   }
 }
 
 function generateFood() {
@@ -86,11 +86,6 @@ function move() {
   }
 }
 
-// setInterval(() => {
-//     move()
-//     draw()
-// }, 200);
-
 function startGame() {
   gameStarted = true;
   instructionText.style.display = "none";
@@ -129,7 +124,6 @@ function handleKeyPress(event) {
 document.addEventListener("keydown", handleKeyPress);
 
 function increaseSpeed() {
-  console.log(gameSpeedDelay);
   if (gameSpeedDelay > 150) {
     gameSpeedDelay -= 5;
   } else if (gameSpeedDelay > 100) {

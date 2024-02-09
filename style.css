@@ -71,6 +71,7 @@ body,
 
 #logo {
     position: absolute;
+    background-color: #c4cfa3;
 }
 
 .snake {
