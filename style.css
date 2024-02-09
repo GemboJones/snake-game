@@ -60,11 +60,11 @@ body,
 }
 
 #score,
-#topScore {
+#highScore {
     font-size: 26px;
 }
 
-#topScore {
+#highScore {
     color: #d8ddca;
     display: none;
 }
