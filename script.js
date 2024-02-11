@@ -106,15 +106,23 @@ function handleKeyPress(event) {
   } else {
     switch (event.key) {
       case "ArrowUp":
+      case "w":
+      case "W":
         direction = "up";
         break;
       case "ArrowDown":
+      case "s":
+      case "S":
         direction = "down";
         break;
       case "ArrowLeft":
+      case "a":
+      case "A":
         direction = "left";
         break;
       case "ArrowRight":
+      case "d":
+      case "D":
         direction = "right";
         break;
     }
